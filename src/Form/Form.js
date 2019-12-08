@@ -1,7 +1,13 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-undef */
 import React, { Component } from 'react'
-import styles from './form.css'
+import './form.css'
+
+// async function getNumBoxesForReturn(userId) {
+//   const res = await fetch(`https://pizza-box-api.herokuapp.com/user/${userId}`)
+//   const json = await res.json()
+//   return json
+// }
 
 class ReboxUserForm extends Component {
   constructor(props) {
@@ -12,29 +18,23 @@ class ReboxUserForm extends Component {
     }
   }
 
-  getNumBoxesForReturn(userId) {
-    fetch(`https://pizza-box-api.herokuapp.com/user/${userId}`).then((res) => res.json())
-      .then(json => {
-        return (json)
-      })
-  }
-
   componentDidMount() {
     const { userId } = this.props
     const { numBoxes } = this.state
     if (numBoxes === null) {
-      const numBoxes = this.getNumBoxesForReturn(userId).then(res => res.numBoxes.length)
+      const numBoxes = getNumBoxesForReturn(userId).then(res => res.numBoxes.length)
       this.setState({ numBoxes })
     }
   }
   // Updates data on the user's end
 
   updateOptIn(checkbox) {
-    const optIn = checkbox.target.checked
+    // console.log(checkbox.target.selected)
+    const optIn = checkbox.target.value
     console.log(optIn)
     const { onChange } = this.props
     onChange(optIn)
-    this.setState({ optIn })
+    this.setState({optIn})
   }
 
   render() {
@@ -45,14 +45,14 @@ class ReboxUserForm extends Component {
     }
 
     return (
-      <div className={styles.form}>
+      <div className='form'>
         <h1>Opt-in for eco-friendly packaging.</h1>
         <p>
           Fast food produces 32.1 million tons of packaging waste per year. Help
           us reduce material waste.
         </p>
-        <div className={styles.checkboxGroup}>
-          <input type='checkbox' onChange={e => this.updateOptIn(e)} />
+        <div className='checkbox-group'>
+          <input type='checkbox' className='checkbox' onChange={e => this.updateOptIn(e)} />
           <p>
             By opting in, you help reduce this waste! We will deliver your food in
             a reusable box. A driver will pick up the boxes when you order again

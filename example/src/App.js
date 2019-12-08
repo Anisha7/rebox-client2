@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
 
-import ExampleComponent from 'rebox-client'
+import ReboxUserForm from 'rebox-client'
+// import ReboxUserForm from 'rebox-client'
 
 export default class App extends Component {
   render () {
     return (
       <div>
-        <ExampleComponent text='Modern React component module' />
+        <ReboxUserForm onChange={(v) => console.log(v)}/>
       </div>
     )
   }

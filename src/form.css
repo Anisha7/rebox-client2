@@ -1,0 +1,44 @@
+.form {
+    color: #333333;
+}
+.form h1 {
+    font-size: 18pt;
+    margin-bottom: 20px;
+}
+
+.form  p {
+    margin: 0;
+    font-size: 14pt;
+}
+
+
+.form label {
+    margin: 10px 0;
+    font-family: 10px;
+    font-size: 14pt;
+}
+
+.form input {
+    margin: 10px 0;
+    font-size: 14pt;
+    color: inherit;
+
+}
+
+.form .checkboxGroup {
+    display: flex;
+    align-items: baseline;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.form input[type='checkbox'] {
+    margin-right: 10px;
+    font-size: 14pt;
+    float: none;
+    border: 1px solid #333333;
+}
+
+.form .red {
+    color: "#c1272d";
+}
