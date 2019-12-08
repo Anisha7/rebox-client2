@@ -1,4 +1,5 @@
-![](https://github.com/Anisha7/rebox-client2/blob/master/rebox-logo_1.png?raw=true)
+<img src="https://github.com/Anisha7/rebox-client2/blob/master/rebox-logo_1.png?raw=true" height="200px">
+
 # REBOX
 Re.box is an api that tracks resuable and manages food containers as they traverse the hands of driver, consumers, and restaurant
 
