@@ -1,4 +1,4 @@
-![]('./../rebox-logo_1.png)
+![](https://github.com/Anisha7/rebox-client2/blob/master/rebox-logo_1.png?raw=true)
 # REBOX
 Re.box is an api that tracks resuable and manages food containers as they traverse the hands of driver, consumers, and restaurant
 
@@ -21,4 +21,5 @@ value will be an object that looks like:
 This function will submit the data to our API and store it to the database.
 This function should only be called if the onChange value in the above component was set to true.
 It will return '200' or an error based on whether or not the request was successful.
-# Non-react projects set-up
+# Non-React Setup
+## [Backend Docs](https://pizza-box-api.herokuapp.com/)
