@@ -1,4 +1,4 @@
-![](`../../../rebox-logo_1.png)
+![]('./../rebox-logo_1.png)
 # REBOX
 Re.box is an api that tracks resuable and manages food containers as they traverse the hands of driver, consumers, and restaurant
 
