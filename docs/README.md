@@ -1,5 +1,7 @@
+![](`../../../rebox-logo_1.png)
 # REBOX
-TODO: describe what rebox is here...
+Re.box is an api that tracks resuable and manages food containers as they traverse the hands of driver, consumers, and restaurant
+
 # React set-up 
 This is the react integration for the Rebox API. We provide you with the react component to embed in your checkout page in order to contact the backend.
 <!-- (API key auth coming soon...!) -->

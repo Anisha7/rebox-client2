@@ -1,5 +1,7 @@
+![](`/../rebox-logo_1.png)
 # REBOX
-TODO: describe what rebox is here...
+Re.box is an api that tracks resuable and manages food containers as they traverse the hands of driver, consumers, and restaurant
+
 # React set-up 
 This is the react integration for the Rebox API. We provide you with the react component to embed in your checkout page in order to contact the backend.
 <!-- (API key auth coming soon...!) -->
@@ -19,4 +21,5 @@ value will be an object that looks like:
 This function will submit the data to our API and store it to the database.
 This function should only be called if the onChange value in the above component was set to true.
 It will return '200' or an error based on whether or not the request was successful.
-# Non-react projects set-up
+# Non-React Setup
+## [Backend Docs](https://pizza-box-api.herokuapp.com/)
